@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="861dp"
+        android:layout_height="614dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <SurfaceView
+            android:id="@+id/MapView"
+            android:layout_width="861dp"
+            android:layout_height="617dp" />
+
+        <ImageView
+            android:layout_width="858dp"
+            android:layout_height="606dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/map" />
+
+        <LinearLayout
+            android:layout_width="436dp"
+            android:layout_height="352dp"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/purpleplayer"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-25dp"
+                app:srcCompat="@drawable/purplesquare" />
+
+            <ImageView
+                android:id="@+id/disease"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/redsquare" />
+
+            <ImageView
+                android:id="@+id/whiteplayer"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/whitesquare" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="352dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/infection3"
+                android:layout_width="204dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|left"
+                android:layout_marginBottom="275dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/infection3" />
+
+            <ImageView
+                android:id="@+id/pandemiccard29"
+                android:layout_width="204dp"
+                android:layout_height="145dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/pandemiccards29" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="204dp"
+        android:layout_height="606dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/pandemicCard11"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/pandemiccards11" />
+
+        <ImageView
+            android:id="@+id/pandemiccard13"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/pandemiccards13" />
+
+        <ImageView
+            android:id="@+id/role3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/role3" />
+
+        <TextView
+            android:id="@+id/playerMove"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="\nPlayer 1, it is your turn. \n4 moves left." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="198dp"
+        android:layout_height="606dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1074dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/pandemiccard16"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/pandemiccards16" />
+
+        <ImageView
+            android:id="@+id/role5"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/role5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1264dp"
+        android:layout_height="133dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="622dp">
+
+        <Button
+            android:id="@+id/MoveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Move" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/TreatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Treat" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/CureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Cure" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/BuildButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Build" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ShareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Share" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/PassButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Pass" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
